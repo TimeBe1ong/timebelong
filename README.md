@@ -54,7 +54,7 @@
 
 ### 使用
 
-1. 下载 [Releases](https://github.com/你的用户名/claude-code-go/releases) 中的 `Claude-Code-Go.exe`
+1. 下载 [Releases](https://github.com/TimeBe1ong/claude-code-go/releases) 中的 `Claude-Code-Go.exe`
 2. 双击运行
 3. 选择 API 预设，填入 Key，配置模型
 4. 点击 🚀 启动
@@ -62,7 +62,7 @@
 ### 从源码运行
 
 ```bash
-git clone https://github.com/你的用户名/claude-code-go.git
+git clone https://github.com/TimeBe1ong/claude-code-go.git
 cd claude-code-go
 python claude_launcher.py
 ```
@@ -74,6 +74,15 @@ pip install pyinstaller
 pyinstaller --onefile --windowed --name "Claude-Code-Go" claude_launcher.py
 ```
 EXE 在 `dist/` 目录。
+
+### 输出启动脚本
+
+配置好 API Key、模型后，点击 **📦 输出 {预设名} Go**，会生成一个独立的启动脚本：
+
+- Windows → `DeepSeekGo.bat`（双击打开 PowerShell，自动设环境变量，启动 Claude）
+- macOS / Linux → `DeepSeekGo.sh`（终端执行，自动 export + 启动）
+
+**这个脚本已经保存了你的配置，可以发给别人或放在任何地方单独使用，不需要再打开启动器。**
 
 ## 技术栈
 
